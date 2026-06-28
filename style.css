@@ -91,3 +91,164 @@ button,input{font:inherit}
   :root{--bg:#171D1B;--surface:#202826;--text:#F1F7F5;--muted:#A6B1AE;--line:#34413D;--soft:#1B2220;--accent-soft:#193633}
   .search-box,.filter,.action,.close{background:var(--surface)}
 }
+
+
+/* V2 correction mobile : priorité aux fiches, haut très compact */
+@media(max-width: 759px){
+  .app-header{
+    padding: 6px 10px 7px;
+  }
+
+  .top-row{
+    margin-bottom: 6px;
+    align-items: center;
+  }
+
+  .top-row h1{
+    font-size: .98rem;
+    line-height: 1.05;
+  }
+
+  .top-row p{
+    display: none;
+  }
+
+  .icon-btn{
+    width: 28px;
+    height: 28px;
+    font-size: .86rem;
+  }
+
+  .search-box{
+    height: 36px;
+    padding: 0 11px;
+  }
+
+  .search-box input{
+    font-size: .94rem;
+  }
+
+  .filters{
+    padding-top: 6px;
+    gap: 5px;
+  }
+
+  .filter{
+    padding: 6px 8px;
+    font-size: .78rem;
+  }
+
+  .content{
+    padding: 8px 9px 12px;
+  }
+
+  .result-count{
+    display: none;
+  }
+
+  .cards{
+    gap: 8px;
+  }
+
+  .family-card{
+    border-radius: 18px;
+  }
+
+  .card-summary{
+    padding: 11px 12px;
+    grid-template-columns: 1fr 22px;
+  }
+
+  .child{
+    font-size: 1.08rem;
+  }
+
+  .location{
+    font-size: .82rem;
+    margin-top: 2px;
+  }
+
+  .zone-dots{
+    margin-top: 3px;
+  }
+
+  .dot{
+    width: 9px;
+    height: 9px;
+  }
+
+  .card-details{
+    padding: 9px 12px 12px;
+  }
+
+  .section-title{
+    margin: 10px 0 6px;
+    font-size: .70rem;
+  }
+
+  .contact{
+    padding: 8px;
+    border-radius: 14px;
+    margin-bottom: 7px;
+  }
+
+  .contact-head{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+
+  .phone-visible{
+    font-size: .93rem;
+  }
+
+  .actions{
+    gap: 5px;
+    margin-top: 7px;
+  }
+
+  .action{
+    padding: 6px 8px;
+    font-size: .78rem;
+  }
+
+  .badge{
+    padding: 5px 7px;
+    font-size: .78rem;
+  }
+
+  .note{
+    padding: 8px;
+    font-size: .84rem;
+  }
+
+  .share-family{
+    padding: 8px 10px;
+    margin-top: 10px;
+  }
+
+  .install-prompt,
+  .update-notice{
+    margin: 7px 9px 0;
+    padding: 9px;
+    border-radius: 15px;
+  }
+
+  .install-prompt p,
+  .update-notice p{
+    display: none;
+  }
+
+  .install-prompt button,
+  .update-notice button{
+    padding: 7px 8px;
+    font-size: .78rem;
+  }
+}
+
+/* Mobile très bas : encore plus compact */
+@media(max-height: 740px) and (max-width: 759px){
+  .app-header{
+    position: static;
+  }
+}

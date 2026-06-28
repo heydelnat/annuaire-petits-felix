@@ -7,7 +7,7 @@ const zones={
   all:{label:"Tous"},
   green:{label:"● Bagnolet",class:"green"},
   blue:{label:"● Réunion",class:"blue"},
-  yellow:{label:"● Saint-Fargeau",class:"yellow"}
+  yellow:{label:"● St-Fargeau",class:"yellow"}
 };
 
 function normalize(s){return String(s||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/\s+/g," ").trim()}
