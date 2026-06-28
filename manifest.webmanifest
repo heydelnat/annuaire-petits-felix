@@ -1,7 +1,7 @@
 {
-  "name": "Annuaire des familles – Félix Terrier",
-  "short_name": "Annuaire Félix",
-  "description": "Annuaire des familles de la classe des Petits du jardin d'enfants Félix Terrier.",
+  "name": "Les Petits – Félix Terrier",
+  "short_name": "Les Petits",
+  "description": "Les familles de la classe des Petits",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#FFFDF8",

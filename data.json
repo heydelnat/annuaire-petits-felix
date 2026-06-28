@@ -1,457 +1,644 @@
 [
   {
-    "enfant": "Matthieu",
-    "referents": [
+    "id": "matthieu",
+    "child": "Matthieu",
+    "contacts": [
       {
-        "nom": "Marine",
-        "telephone": "06 18 39 85 75",
+        "name": "Marine",
+        "phone": "06 18 39 85 75",
         "e164": "33618398575"
       },
       {
-        "nom": "Alexandre",
-        "telephone": "",
+        "name": "Alexandre",
+        "phone": "",
         "e164": ""
       }
     ],
-    "repere": "",
-    "secteurs": [
-      "Porte de Bagnolet / Davout"
-    ],
+    "location": "",
     "zones": {
       "green": true,
       "blue": false,
       "yellow": false
     },
-    "interets": [
-      "Simple mise en relation",
-      "Récupérations ponctuelles entre familles"
+    "sectors": [
+      "Porte de Bagnolet / Davout"
     ],
-    "precisions": "Travaille tôt ; recherche éventuelle d'une solution pour la dépose du matin."
+    "interests": [
+      {
+        "label": "Mise en relation",
+        "short": "Mise en relation",
+        "icon": "🤝"
+      },
+      {
+        "label": "Récupérations ponctuelles",
+        "short": "Récupérations",
+        "icon": "🚸"
+      }
+    ],
+    "notes": "Travaille tôt ; recherche éventuelle d'une solution pour la dépose du matin."
   },
   {
-    "enfant": "Chloé",
-    "referents": [
+    "id": "chlo",
+    "child": "Chloé",
+    "contacts": [
       {
-        "nom": "Nathalie",
-        "telephone": "06 73 72 85 95",
+        "name": "Nathalie",
+        "phone": "06 73 72 85 95",
         "e164": "33673728595"
       },
       {
-        "nom": "Aurélien",
-        "telephone": "06 08 33 13 10",
+        "name": "Aurélien",
+        "phone": "06 08 33 13 10",
         "e164": "33608331310"
       }
     ],
-    "repere": "10 rue de la Justice",
-    "secteurs": [
-      "Porte de Bagnolet / Davout",
-      "Saint-Fargeau / Pelleport / Gambetta"
-    ],
+    "location": "10 rue de la Justice",
     "zones": {
       "green": true,
       "blue": false,
       "yellow": true
     },
-    "interets": [
-      "Simple mise en relation",
-      "Récupérations ponctuelles entre familles",
-      "Mutualisation d'une nounou",
-      "Activités hors temps scolaire"
+    "sectors": [
+      "Porte de Bagnolet / Davout",
+      "Saint-Fargeau / Pelleport / Gambetta"
     ],
-    "precisions": "Intéressés par la recherche d'une nounou partagée après l'école avec une famille voisine."
+    "interests": [
+      {
+        "label": "Mise en relation",
+        "short": "Mise en relation",
+        "icon": "🤝"
+      },
+      {
+        "label": "Récupérations ponctuelles",
+        "short": "Récupérations",
+        "icon": "🚸"
+      },
+      {
+        "label": "Mutualisation d'une nounou",
+        "short": "Nounou",
+        "icon": "👶"
+      },
+      {
+        "label": "Activités hors temps scolaire",
+        "short": "Activités",
+        "icon": "🎈"
+      }
+    ],
+    "notes": "Intéressés par la recherche d'une nounou partagée après l'école avec une famille voisine."
   },
   {
-    "enfant": "Francesco",
-    "referents": [
+    "id": "francesco",
+    "child": "Francesco",
+    "contacts": [
       {
-        "nom": "Veronica",
-        "telephone": "06 77 03 60 77",
+        "name": "Veronica",
+        "phone": "06 77 03 60 77",
         "e164": "33677036077"
       },
       {
-        "nom": "Guillaume",
-        "telephone": "06 66 55 84 70",
+        "name": "Guillaume",
+        "phone": "06 66 55 84 70",
         "e164": "33666558470"
       }
     ],
-    "repere": "163 rue de Bagnolet",
-    "secteurs": [
-      "Porte de Bagnolet / Davout"
-    ],
+    "location": "163 rue de Bagnolet",
     "zones": {
       "green": true,
       "blue": false,
       "yellow": false
     },
-    "interets": [
-      "Simple mise en relation",
-      "Récupérations ponctuelles entre familles",
-      "Activités hors temps scolaire"
+    "sectors": [
+      "Porte de Bagnolet / Davout"
     ],
-    "precisions": ""
+    "interests": [
+      {
+        "label": "Mise en relation",
+        "short": "Mise en relation",
+        "icon": "🤝"
+      },
+      {
+        "label": "Récupérations ponctuelles",
+        "short": "Récupérations",
+        "icon": "🚸"
+      },
+      {
+        "label": "Activités hors temps scolaire",
+        "short": "Activités",
+        "icon": "🎈"
+      }
+    ],
+    "notes": ""
   },
   {
-    "enfant": "Elisha",
-    "referents": [
+    "id": "elisha",
+    "child": "Elisha",
+    "contacts": [
       {
-        "nom": "Nathanaëlle",
-        "telephone": "06 43 45 51 56",
+        "name": "Nathanaëlle",
+        "phone": "06 43 45 51 56",
         "e164": "33643455156"
       },
       {
-        "nom": "Jérémie",
-        "telephone": "06 43 30 97 04",
+        "name": "Jérémie",
+        "phone": "06 43 30 97 04",
         "e164": "33643309704"
       }
     ],
-    "repere": "17 rue de Terre Neuve",
-    "secteurs": [
-      "Réunion / Charonne"
-    ],
+    "location": "17 rue de Terre Neuve",
     "zones": {
       "green": false,
       "blue": true,
       "yellow": false
     },
-    "interets": [
-      "Simple mise en relation",
-      "Récupérations ponctuelles entre familles",
-      "Mutualisation d'une nounou",
-      "Activités hors temps scolaire"
+    "sectors": [
+      "Réunion / Charonne"
     ],
-    "precisions": ""
+    "interests": [
+      {
+        "label": "Mise en relation",
+        "short": "Mise en relation",
+        "icon": "🤝"
+      },
+      {
+        "label": "Récupérations ponctuelles",
+        "short": "Récupérations",
+        "icon": "🚸"
+      },
+      {
+        "label": "Mutualisation d'une nounou",
+        "short": "Nounou",
+        "icon": "👶"
+      },
+      {
+        "label": "Activités hors temps scolaire",
+        "short": "Activités",
+        "icon": "🎈"
+      }
+    ],
+    "notes": ""
   },
   {
-    "enfant": "Calypso",
-    "referents": [
+    "id": "calypso",
+    "child": "Calypso",
+    "contacts": [
       {
-        "nom": "James",
-        "telephone": "06 98 07 92 78",
+        "name": "James",
+        "phone": "06 98 07 92 78",
         "e164": "33698079278"
       },
       {
-        "nom": "Eva",
-        "telephone": "06 49 09 37 44",
+        "name": "Eva",
+        "phone": "06 49 09 37 44",
         "e164": "33649093744"
       }
     ],
-    "repere": "39 rue Saint-Fargeau",
-    "secteurs": [
-      "Saint-Fargeau / Pelleport / Gambetta"
-    ],
+    "location": "39 rue Saint-Fargeau",
     "zones": {
       "green": false,
       "blue": false,
       "yellow": true
     },
-    "interets": [
-      "Simple mise en relation",
-      "Récupérations ponctuelles entre familles",
-      "Mutualisation d'une nounou",
-      "Activités hors temps scolaire"
+    "sectors": [
+      "Saint-Fargeau / Pelleport / Gambetta"
     ],
-    "precisions": "Garde partagée uniquement si proximité du domicile."
+    "interests": [
+      {
+        "label": "Mise en relation",
+        "short": "Mise en relation",
+        "icon": "🤝"
+      },
+      {
+        "label": "Récupérations ponctuelles",
+        "short": "Récupérations",
+        "icon": "🚸"
+      },
+      {
+        "label": "Mutualisation d'une nounou",
+        "short": "Nounou",
+        "icon": "👶"
+      },
+      {
+        "label": "Activités hors temps scolaire",
+        "short": "Activités",
+        "icon": "🎈"
+      }
+    ],
+    "notes": "Garde partagée uniquement si proximité du domicile."
   },
   {
-    "enfant": "Lauren et Gabriel (chez les grands)",
-    "referents": [
+    "id": "lauren-et-gabriel-chez-les-grands",
+    "child": "Lauren et Gabriel (chez les grands)",
+    "contacts": [
       {
-        "nom": "Benoit",
-        "telephone": "06 68 10 11 31",
+        "name": "Benoit",
+        "phone": "06 68 10 11 31",
         "e164": "33668101131"
       },
       {
-        "nom": "Priscille",
-        "telephone": "06 47 45 78 85",
+        "name": "Priscille",
+        "phone": "06 47 45 78 85",
         "e164": "33647457885"
       }
     ],
-    "repere": "59 rue Saint-Blaise",
-    "secteurs": [
-      "Porte de Bagnolet / Davout",
-      "Réunion / Charonne"
-    ],
+    "location": "59 rue Saint-Blaise",
     "zones": {
       "green": true,
       "blue": true,
       "yellow": false
     },
-    "interets": [
-      "Simple mise en relation",
-      "Récupérations ponctuelles entre familles",
-      "Activités hors temps scolaire"
+    "sectors": [
+      "Porte de Bagnolet / Davout",
+      "Réunion / Charonne"
     ],
-    "precisions": ""
+    "interests": [
+      {
+        "label": "Mise en relation",
+        "short": "Mise en relation",
+        "icon": "🤝"
+      },
+      {
+        "label": "Récupérations ponctuelles",
+        "short": "Récupérations",
+        "icon": "🚸"
+      },
+      {
+        "label": "Activités hors temps scolaire",
+        "short": "Activités",
+        "icon": "🎈"
+      }
+    ],
+    "notes": ""
   },
   {
-    "enfant": "Nayah",
-    "referents": [
+    "id": "nayah",
+    "child": "Nayah",
+    "contacts": [
       {
-        "nom": "Lovely",
-        "telephone": "06 24 88 02 23",
+        "name": "Lovely",
+        "phone": "06 24 88 02 23",
         "e164": "33624880223"
       },
       {
-        "nom": "Parent",
-        "telephone": "06 58 28 82 69",
+        "name": "Parent",
+        "phone": "06 58 28 82 69",
         "e164": "33658288269"
       }
     ],
-    "repere": "Boulevard Davout",
-    "secteurs": [
-      "Porte de Bagnolet / Davout"
-    ],
+    "location": "Boulevard Davout",
     "zones": {
       "green": true,
       "blue": false,
       "yellow": false
     },
-    "interets": [
-      "Récupérations ponctuelles entre familles",
-      "Mutualisation d'une nounou",
-      "Activités hors temps scolaire"
+    "sectors": [
+      "Porte de Bagnolet / Davout"
     ],
-    "precisions": ""
+    "interests": [
+      {
+        "label": "Récupérations ponctuelles",
+        "short": "Récupérations",
+        "icon": "🚸"
+      },
+      {
+        "label": "Mutualisation d'une nounou",
+        "short": "Nounou",
+        "icon": "👶"
+      },
+      {
+        "label": "Activités hors temps scolaire",
+        "short": "Activités",
+        "icon": "🎈"
+      }
+    ],
+    "notes": ""
   },
   {
-    "enfant": "Lou",
-    "referents": [
+    "id": "lou",
+    "child": "Lou",
+    "contacts": [
       {
-        "nom": "Martin",
-        "telephone": "06 78 41 48 12",
+        "name": "Martin",
+        "phone": "06 78 41 48 12",
         "e164": "33678414812"
       },
       {
-        "nom": "Amélie",
-        "telephone": "",
+        "name": "Amélie",
+        "phone": "",
         "e164": ""
       }
     ],
-    "repere": "Croisement Orteaux Réunion",
-    "secteurs": [
-      "Réunion / Charonne"
-    ],
+    "location": "Croisement Orteaux Réunion",
     "zones": {
       "green": false,
       "blue": true,
       "yellow": false
     },
-    "interets": [
-      "Simple mise en relation",
-      "Récupérations ponctuelles entre familles"
+    "sectors": [
+      "Réunion / Charonne"
     ],
-    "precisions": "Ouverts aux échanges avec les familles du quartier."
+    "interests": [
+      {
+        "label": "Mise en relation",
+        "short": "Mise en relation",
+        "icon": "🤝"
+      },
+      {
+        "label": "Récupérations ponctuelles",
+        "short": "Récupérations",
+        "icon": "🚸"
+      }
+    ],
+    "notes": "Ouverts aux échanges avec les familles du quartier."
   },
   {
-    "enfant": "Émile et Romane",
-    "referents": [
+    "id": "mile-et-romane",
+    "child": "Émile et Romane",
+    "contacts": [
       {
-        "nom": "Mélissa",
-        "telephone": "06 41 60 29 46",
+        "name": "Mélissa",
+        "phone": "06 41 60 29 46",
         "e164": "33641602946"
       },
       {
-        "nom": "Stéphanie",
-        "telephone": "06 25 58 66 78",
+        "name": "Stéphanie",
+        "phone": "06 25 58 66 78",
         "e164": "33625586678"
       },
       {
-        "nom": "Jocelyne",
-        "telephone": "06 11 10 55 14",
+        "name": "Jocelyne",
+        "phone": "06 11 10 55 14",
         "e164": "33611105514"
       }
     ],
-    "repere": "65 rue des Maraîchers",
-    "secteurs": [
-      "Réunion / Charonne"
-    ],
+    "location": "65 rue des Maraîchers",
     "zones": {
       "green": false,
       "blue": true,
       "yellow": false
     },
-    "interets": [
-      "Simple mise en relation",
-      "Récupérations ponctuelles entre familles",
-      "Mutualisation d'une nounou",
-      "Activités hors temps scolaire"
+    "sectors": [
+      "Réunion / Charonne"
     ],
-    "precisions": ""
+    "interests": [
+      {
+        "label": "Mise en relation",
+        "short": "Mise en relation",
+        "icon": "🤝"
+      },
+      {
+        "label": "Récupérations ponctuelles",
+        "short": "Récupérations",
+        "icon": "🚸"
+      },
+      {
+        "label": "Mutualisation d'une nounou",
+        "short": "Nounou",
+        "icon": "👶"
+      },
+      {
+        "label": "Activités hors temps scolaire",
+        "short": "Activités",
+        "icon": "🎈"
+      }
+    ],
+    "notes": ""
   },
   {
-    "enfant": "Léna",
-    "referents": [
+    "id": "l-na",
+    "child": "Léna",
+    "contacts": [
       {
-        "nom": "Jane",
-        "telephone": "06 29 88 72 34",
+        "name": "Jane",
+        "phone": "06 29 88 72 34",
         "e164": "33629887234"
       },
       {
-        "nom": "Guillaume",
-        "telephone": "06 84 47 11 20",
+        "name": "Guillaume",
+        "phone": "06 84 47 11 20",
         "e164": "33684471120"
       }
     ],
-    "repere": "",
-    "secteurs": [
-      "Saint-Fargeau / Pelleport / Gambetta"
-    ],
+    "location": "",
     "zones": {
       "green": false,
       "blue": false,
       "yellow": true
     },
-    "interets": [
-      "Simple mise en relation",
-      "Activités hors temps scolaire"
+    "sectors": [
+      "Saint-Fargeau / Pelleport / Gambetta"
     ],
-    "precisions": ""
+    "interests": [
+      {
+        "label": "Mise en relation",
+        "short": "Mise en relation",
+        "icon": "🤝"
+      },
+      {
+        "label": "Activités hors temps scolaire",
+        "short": "Activités",
+        "icon": "🎈"
+      }
+    ],
+    "notes": ""
   },
   {
-    "enfant": "Leonora",
-    "referents": [
+    "id": "leonora",
+    "child": "Leonora",
+    "contacts": [
       {
-        "nom": "Lola",
-        "telephone": "06 37 85 98 41",
+        "name": "Lola",
+        "phone": "06 37 85 98 41",
         "e164": "33637859841"
       },
       {
-        "nom": "Maxence",
-        "telephone": "06 50 24 15 64",
+        "name": "Maxence",
+        "phone": "06 50 24 15 64",
         "e164": "33650241564"
       },
       {
-        "nom": "Chantal",
-        "telephone": "06 83 19 52 52",
+        "name": "Chantal",
+        "phone": "06 83 19 52 52",
         "e164": "33683195252"
       }
     ],
-    "repere": "Boulevard Davout",
-    "secteurs": [
-      "Porte de Bagnolet / Davout"
-    ],
+    "location": "Boulevard Davout",
     "zones": {
       "green": true,
       "blue": false,
       "yellow": false
     },
-    "interets": [
-      "Simple mise en relation",
-      "Activités hors temps scolaire"
+    "sectors": [
+      "Porte de Bagnolet / Davout"
     ],
-    "precisions": ""
+    "interests": [
+      {
+        "label": "Mise en relation",
+        "short": "Mise en relation",
+        "icon": "🤝"
+      },
+      {
+        "label": "Activités hors temps scolaire",
+        "short": "Activités",
+        "icon": "🎈"
+      }
+    ],
+    "notes": ""
   },
   {
-    "enfant": "Ellie",
-    "referents": [
+    "id": "ellie",
+    "child": "Ellie",
+    "contacts": [
       {
-        "nom": "Thomas",
-        "telephone": "06 82 89 94 89",
+        "name": "Thomas",
+        "phone": "06 82 89 94 89",
         "e164": "33682899489"
       },
       {
-        "nom": "Anne",
-        "telephone": "06 27 26 41 70",
+        "name": "Anne",
+        "phone": "06 27 26 41 70",
         "e164": "33627264170"
       }
     ],
-    "repere": "75 rue des Pyrénées",
-    "secteurs": [
-      "Réunion / Charonne"
-    ],
+    "location": "75 rue des Pyrénées",
     "zones": {
       "green": false,
       "blue": true,
       "yellow": false
     },
-    "interets": [
-      "Simple mise en relation",
-      "Récupérations ponctuelles entre familles",
-      "Mutualisation d'une nounou",
-      "Activités hors temps scolaire"
+    "sectors": [
+      "Réunion / Charonne"
     ],
-    "precisions": ""
+    "interests": [
+      {
+        "label": "Mise en relation",
+        "short": "Mise en relation",
+        "icon": "🤝"
+      },
+      {
+        "label": "Récupérations ponctuelles",
+        "short": "Récupérations",
+        "icon": "🚸"
+      },
+      {
+        "label": "Mutualisation d'une nounou",
+        "short": "Nounou",
+        "icon": "👶"
+      },
+      {
+        "label": "Activités hors temps scolaire",
+        "short": "Activités",
+        "icon": "🎈"
+      }
+    ],
+    "notes": ""
   },
   {
-    "enfant": "Mélina",
-    "referents": [
+    "id": "m-lina",
+    "child": "Mélina",
+    "contacts": [
       {
-        "nom": "Maeva",
-        "telephone": "07 67 81 74 15",
+        "name": "Maeva",
+        "phone": "07 67 81 74 15",
         "e164": "33767817415"
       }
     ],
-    "repere": "Place de la Réunion",
-    "secteurs": [
-      "Réunion / Charonne"
-    ],
+    "location": "Place de la Réunion",
     "zones": {
       "green": false,
       "blue": true,
       "yellow": false
     },
-    "interets": [
-      "Simple mise en relation",
-      "Récupérations ponctuelles entre familles",
-      "Mutualisation d'une nounou",
-      "Activités hors temps scolaire"
+    "sectors": [
+      "Réunion / Charonne"
     ],
-    "precisions": ""
+    "interests": [
+      {
+        "label": "Mise en relation",
+        "short": "Mise en relation",
+        "icon": "🤝"
+      },
+      {
+        "label": "Récupérations ponctuelles",
+        "short": "Récupérations",
+        "icon": "🚸"
+      },
+      {
+        "label": "Mutualisation d'une nounou",
+        "short": "Nounou",
+        "icon": "👶"
+      },
+      {
+        "label": "Activités hors temps scolaire",
+        "short": "Activités",
+        "icon": "🎈"
+      }
+    ],
+    "notes": ""
   },
   {
-    "enfant": "Mohammed",
-    "referents": [
+    "id": "mohammed",
+    "child": "Mohammed",
+    "contacts": [
       {
-        "nom": "Kadidiatou",
-        "telephone": "06 09 75 63 13",
+        "name": "Kadidiatou",
+        "phone": "06 09 75 63 13",
         "e164": "33609756313"
       }
     ],
-    "repere": "3 Square d'Amiens",
-    "secteurs": [
-      "Porte de Bagnolet / Davout"
-    ],
+    "location": "3 Square d'Amiens",
     "zones": {
       "green": true,
       "blue": false,
       "yellow": false
     },
-    "interets": [
-      "Simple mise en relation"
+    "sectors": [
+      "Porte de Bagnolet / Davout"
     ],
-    "precisions": ""
+    "interests": [
+      {
+        "label": "Mise en relation",
+        "short": "Mise en relation",
+        "icon": "🤝"
+      }
+    ],
+    "notes": ""
   },
   {
-    "enfant": "Louison",
-    "referents": [
+    "id": "louison",
+    "child": "Louison",
+    "contacts": [
       {
-        "nom": "Damien",
-        "telephone": "06 27 04 47 25",
+        "name": "Damien",
+        "phone": "06 27 04 47 25",
         "e164": "33627044725"
       },
       {
-        "nom": "Clémence",
-        "telephone": "06 38 84 41 62",
+        "name": "Clémence",
+        "phone": "06 38 84 41 62",
         "e164": "33638844162"
       },
       {
-        "nom": "Marine (marraine)",
-        "telephone": "06 48 35 70 47",
+        "name": "Marine (marraine)",
+        "phone": "06 48 35 70 47",
         "e164": "33648357047"
       }
     ],
-    "repere": "89A rue des Pyrénées",
-    "secteurs": [
-      "Réunion / Charonne"
-    ],
+    "location": "89A rue des Pyrénées",
     "zones": {
       "green": false,
       "blue": true,
       "yellow": false
     },
-    "interets": [
-      "Simple mise en relation"
+    "sectors": [
+      "Réunion / Charonne"
     ],
-    "precisions": "Notre besoin pourra évoluer à la rentrée. Éventuellement intéressés par une garde partagée (à notre domicile)."
+    "interests": [
+      {
+        "label": "Mise en relation",
+        "short": "Mise en relation",
+        "icon": "🤝"
+      }
+    ],
+    "notes": "Notre besoin pourra évoluer à la rentrée. Éventuellement intéressés par une garde partagée (à notre domicile)."
   }
 ]

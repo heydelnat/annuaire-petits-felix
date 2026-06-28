@@ -6,101 +6,98 @@
   <meta name="robots" content="noindex,nofollow,noarchive">
   <meta name="theme-color" content="#FFFDF8">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-title" content="Annuaire Félix">
+  <meta name="apple-mobile-web-app-title" content="Les Petits">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <title>Annuaire des familles – Félix Terrier</title>
+  <title>Les Petits – Félix Terrier</title>
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <section id="lockScreen" class="lock-screen">
-    <div class="lock-card">
-      <div class="app-mark" aria-hidden="true"><span></span><span></span><span></span></div>
-      <h1>Annuaire des familles</h1>
-      <p>Classe des Petits<br>Jardin d'enfants Félix Terrier</p>
-      <form id="passwordForm">
-        <label for="passwordInput">Mot de passe</label>
-        <input id="passwordInput" type="password" autocomplete="current-password" placeholder="Entrer le mot de passe">
-        <button type="submit">Accéder à l'annuaire</button>
-        <p id="passwordError" class="error" role="alert"></p>
-      </form>
-      <p class="privacy-note">Accès réservé aux familles de la classe. Merci de ne pas diffuser le lien ni le mot de passe en dehors du groupe.</p>
-    </div>
-  </section>
-
-
-    <section id="welcomePanel" class="welcome-panel hidden">
-      <div class="welcome-card">
-        <h2>Bienvenue dans l'annuaire</h2>
-        <p>Vous pouvez ajouter cette application à l'écran d'accueil de votre téléphone pour la retrouver facilement.</p>
-        <div class="install-steps">
-          <div><strong>iPhone</strong><br>Ouvrir dans Safari → bouton Partager → Sur l'écran d'accueil.</div>
-          <div><strong>Android</strong><br>Menu du navigateur → Ajouter à l'écran d'accueil.</div>
-        </div>
-        <button id="welcomeOk" type="button">J'ai compris</button>
-      </div>
-    </section>
-
-
-  <div id="app" class="app hidden">
-    <header>
-      <div class="container">
-        <section class="hero">
-          <div>
-            <p class="eyebrow">Classe des Petits</p>
-            <h1>Annuaire des familles</h1>
-            <p class="subtitle">Jardin d'enfants Félix Terrier</p>
-            <p class="micro">Faciliter les rencontres, les trajets, les gardes et les activités.</p>
-          </div>
-          <button id="logoutButton" class="ghost-button" type="button">Verrouiller</button>
-        </section>
-
-        <section class="stats" aria-label="Synthèse">
-          <div><strong id="familyCount">0</strong><span>familles</span></div>
-          <div><strong id="referentCount">0</strong><span>référents</span></div>
-          <div><strong>3</strong><span>repères</span></div>
-        </section>
-
-        <section class="controls" aria-label="Recherche et filtres">
-          <div class="search-wrap">
-            <span aria-hidden="true">🔍</span>
-            <input id="search" class="search" type="search" placeholder="Rechercher un enfant ou un référent…">
-          </div>
-          <div id="filters" class="filters"></div>
-          <div class="my-zone">
-            <label for="myZone">Autour de chez moi</label>
-            <select id="myZone">
-              <option value="">Choisir un repère</option>
-              <option value="green">🟢 Porte de Bagnolet / Davout</option>
-              <option value="blue">🔵 Réunion / Charonne</option>
-              <option value="yellow">🟡 Saint-Fargeau / Pelleport / Gambetta</option>
-            </select>
-          </div>
-        </section>
-      </div>
-    </header>
-
-    <main class="container">
-      <p class="count" id="count"></p>
-      <div class="legend">
-        <span class="tag">🟢 Porte de Bagnolet / Davout</span>
-        <span class="tag">🔵 Réunion / Charonne</span>
-        <span class="tag">🟡 Saint-Fargeau / Pelleport / Gambetta</span>
-      </div>
-      <div id="cards" class="grid"></div>
-      <p id="empty" class="empty">Aucune famille ne correspond à cette recherche.</p>
-    </main>
-
-    <button id="topButton" class="top-button" type="button">↑</button>
-
-    <footer class="container">
-      <p>Cet annuaire reprend les informations transmises par les familles. Pour corriger, compléter ou retirer une information, contactez Nathalie.</p>
-      <p class="install-help">Pour l'ajouter à l'écran d'accueil : sur iPhone, bouton Partager → « Sur l'écran d'accueil » ; sur Android, menu du navigateur → « Ajouter à l'écran d'accueil ».</p>
-    </footer>
+  <div id="splash" class="splash" aria-hidden="true">
+    <div class="brand-dots"><i class="z-green"></i><i class="z-blue"></i><i class="z-yellow"></i></div>
+    <strong>Les Petits</strong>
+    <span>Félix Terrier</span>
   </div>
 
+  <main id="lock" class="lock">
+    <section class="lock-card">
+      <div class="brand-dots"><i class="z-green"></i><i class="z-blue"></i><i class="z-yellow"></i></div>
+      <h1>Les Petits – Félix Terrier</h1>
+      <p>Les familles de la classe des Petits</p>
+      <form id="passwordForm">
+        <label for="passwordInput">Mot de passe</label>
+        <input id="passwordInput" type="password" autocomplete="current-password" required>
+        <button type="submit">Accéder</button>
+        <p id="passwordError" class="form-error"></p>
+      </form>
+      <p class="tiny">Accès réservé aux familles de la classe. Merci de ne pas diffuser le lien ni le mot de passe en dehors du groupe.</p>
+    </section>
+  </main>
+
+  <div id="app" class="app hidden">
+    <header class="app-header">
+      <div class="top-row">
+        <div>
+          <h1>Les Petits – Félix Terrier</h1>
+          <p>Les familles de la classe des Petits</p>
+        </div>
+        <button id="aboutButton" class="icon-btn" type="button" aria-label="Informations">i</button>
+      </div>
+
+      <div class="search-box">
+        <span aria-hidden="true">⌕</span>
+        <input id="searchInput" type="search" placeholder="Rechercher…" autocomplete="off">
+      </div>
+
+      <nav id="filters" class="filters" aria-label="Filtres par secteur"></nav>
+    </header>
+
+    <section id="installPrompt" class="install-prompt hidden">
+      <div>
+        <strong>Installer l'application</strong>
+        <p>Ajoutez-la à l'écran d'accueil pour un accès plus rapide.</p>
+      </div>
+      <button id="installNow" type="button">Installer</button>
+      <button id="installLater" type="button">Plus tard</button>
+    </section>
+
+    <section id="updateNotice" class="update-notice hidden">
+      <div>
+        <strong>Mise à jour disponible</strong>
+        <p>Une nouvelle version de l'application est prête.</p>
+      </div>
+      <button id="reloadApp" type="button">Mettre à jour</button>
+    </section>
+
+    <section class="content">
+      <p id="resultCount" class="result-count"></p>
+      <div id="cards" class="cards"></div>
+      <p id="empty" class="empty hidden">Aucune famille ne correspond à cette recherche.</p>
+    </section>
+  </div>
+
+  <dialog id="aboutDialog" class="about-dialog">
+    <form method="dialog">
+      <button class="close" aria-label="Fermer">×</button>
+    </form>
+    <h2>Les Petits – Félix Terrier</h2>
+    <p>Cette application permet aux familles de la classe des Petits de se retrouver plus facilement.</p>
+    <h3>Installer l'application</h3>
+    <p><strong>iPhone :</strong> ouvrez dans Safari, bouton Partager, puis « Sur l'écran d'accueil ».</p>
+    <p><strong>Android :</strong> ouvrez le menu du navigateur, puis « Ajouter à l'écran d'accueil ».</p>
+    <h3>Repères géographiques</h3>
+    <ul>
+      <li><span class="dot green"></span> Porte de Bagnolet / Davout</li>
+      <li><span class="dot blue"></span> Réunion / Charonne</li>
+      <li><span class="dot yellow"></span> Saint-Fargeau / Pelleport / Gambetta</li>
+    </ul>
+    <h3>Confidentialité</h3>
+    <p>Merci de ne pas partager cette application en dehors du groupe des familles de la classe.</p>
+    <button id="logoutButton" class="secondary-action" type="button">Se déconnecter</button>
+  </dialog>
+
   <script src="config.js"></script>
-  <script src="script.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
