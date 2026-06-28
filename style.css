@@ -19,7 +19,7 @@ body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ari
 .lock-card input:focus{border-color:var(--coral);box-shadow:0 0 0 4px rgba(255,107,107,.13)}
 .lock-card button{border:0;background:var(--turquoise);color:white;font-weight:800;border-radius:999px;padding:14px;font-size:1rem}
 .error{min-height:1.2em;color:var(--coral-dark);font-weight:700}.privacy-note{font-size:.85rem}
-header{position:static;background:rgba(255,253,248,.96);border-bottom:1px solid var(--line);padding:10px 12px}
+header{position:sticky;top:0;z-index:10;background:rgba(255,253,248,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);padding:14px}
 .hero{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:16px;box-shadow:var(--soft-shadow);display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
 .eyebrow{margin:0 0 2px;color:var(--turquoise-dark);font-weight:800;font-size:.86rem}
 h1{font-size:1.64rem;line-height:1.08;margin:0;color:var(--coral-dark);letter-spacing:-.025em}.subtitle{margin:4px 0 0;font-size:1rem;color:var(--turquoise-dark);font-weight:750}.micro{margin:7px 0 0;color:var(--muted);font-size:.92rem}
@@ -92,23 +92,4 @@ footer{max-width:930px;margin:18px auto 32px;padding:0 14px;color:var(--muted);f
   font-weight:800;
   padding:13px;
   font-size:1rem;
-}
-
-
-/* Ajustement mobile : moins de hauteur en haut, plus de place pour les fiches */
-@media(max-width:759px){
-  .hero{padding:12px;border-radius:20px}
-  h1{font-size:1.38rem}
-  .subtitle{font-size:.92rem}
-  .micro{display:none}
-  .stats{display:none}
-  .controls{gap:8px}
-  .search{padding:12px 14px 12px 42px}
-  .filters{gap:6px}
-  .filter{padding:8px 10px;font-size:.84rem}
-  main{padding-top:12px}
-  .legend{display:none}
-}
-@media(min-width:760px){
-  header{position:sticky;top:0;z-index:10;backdrop-filter:blur(12px);padding:14px}
 }

@@ -55,8 +55,8 @@ function renderFilters(){
 }
 function render(){
   renderFilters();
-  const q=normalize(search.value);
-  let list=families.filter(f=>matches(f)&&(!q||searchable(f).includes(q)));
+  const q=normalize(search.value), my=$("myZone").value;
+  let list=families.filter(f=>matches(f)&&(!q||searchable(f).includes(q))&&(!my||f.zones[my]));
   const favs=new Set(JSON.parse(localStorage.getItem("favorites")||"[]"));
   list.sort((a,b)=>(favs.has(b.enfant)-favs.has(a.enfant))||a.enfant.localeCompare(b.enfant,"fr"));
   cards.innerHTML=list.map(f=>{
@@ -87,8 +87,9 @@ function render(){
 async function loadData(){
   const res=await fetch("data.json?version="+Date.now()); families=await res.json(); render();
 }
-search.addEventListener("input",render);render()});
+search.addEventListener("input",render);
+$("myZone").addEventListener("change",()=>{localStorage.setItem("myZone",$("myZone").value);render()});
 $("topButton").addEventListener("click",()=>scrollTo({top:0,behavior:"smooth"}));
 addEventListener("scroll",()=>{$("topButton").style.display=scrollY>450?"block":"none"});
 if("serviceWorker" in navigator){navigator.serviceWorker.register("sw.js")}
-if(isUnlocked()){showApp(); loadData()} else {showLock()}
+if(isUnlocked()){showApp(); $("myZone").value=localStorage.getItem("myZone")||""; loadData()} else {showLock()}
