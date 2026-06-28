@@ -4,10 +4,10 @@ const state={families:[],filter:"all",query:"",deferredInstall:null};
 const qs=(s,root=document)=>root.querySelector(s);
 const qsa=(s,root=document)=>[...root.querySelectorAll(s)];
 const zones={
-  all:{label:"Tous"},
-  green:{label:"● Bagnolet",class:"green"},
-  blue:{label:"● Réunion",class:"blue"},
-  yellow:{label:"● St-Fargeau",class:"yellow"}
+  all:{label:"Tous", dot:""},
+  green:{label:"Bagnolet", class:"green", dot:"green"},
+  blue:{label:"Réunion", class:"blue", dot:"blue"},
+  yellow:{label:"St-Fargeau", class:"yellow", dot:"yellow"}
 };
 
 function normalize(s){return String(s||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/\s+/g," ").trim()}
@@ -67,7 +67,10 @@ async function shareFamily(familyId){
 function renderFilters(){
   const counts={all:state.families.length,green:0,blue:0,yellow:0};
   state.families.forEach(f=>{if(f.zones.green)counts.green++; if(f.zones.blue)counts.blue++; if(f.zones.yellow)counts.yellow++});
-  qs("#filters").innerHTML=Object.entries(zones).map(([key,z])=>`<button class="filter ${state.filter===key?"active":""}" data-filter="${key}">${z.label} (${counts[key]})</button>`).join("");
+  qs("#filters").innerHTML=Object.entries(zones).map(([key,z])=>{
+    const dot = z.dot ? `<span class="filter-dot ${z.dot}"></span>` : "";
+    return `<button class="filter ${state.filter===key?"active":""}" data-filter="${key}">${dot}${z.label} (${counts[key]})</button>`;
+  }).join("");
 }
 
 function render(){

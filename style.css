@@ -252,3 +252,27 @@ button,input{font:inherit}
     position: static;
   }
 }
+
+
+/* Pastilles colorées dans les filtres */
+.filter{
+  display:inline-flex;
+  align-items:center;
+  gap:5px;
+}
+
+.filter-dot{
+  width:9px;
+  height:9px;
+  border-radius:50%;
+  display:inline-block;
+  flex:0 0 auto;
+}
+
+.filter-dot.green{background:var(--green)}
+.filter-dot.blue{background:var(--blue)}
+.filter-dot.yellow{background:var(--yellow)}
+
+.filter.active .filter-dot{
+  outline:2px solid rgba(255,255,255,.85);
+}
