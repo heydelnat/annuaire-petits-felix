@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="theme-color" content="#FFFDF8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Annuaire Félix">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <title>Annuaire des familles – Félix Terrier</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="lockScreen" class="lock-screen">
+    <div class="lock-card">
+      <div class="app-mark" aria-hidden="true"><span></span><span></span><span></span></div>
+      <h1>Annuaire des familles</h1>
+      <p>Classe des Petits<br>Jardin d'enfants Félix Terrier</p>
+      <form id="passwordForm">
+        <label for="passwordInput">Mot de passe</label>
+        <input id="passwordInput" type="password" autocomplete="current-password" placeholder="Entrer le mot de passe">
+        <button type="submit">Accéder à l'annuaire</button>
+        <p id="passwordError" class="error" role="alert"></p>
+      </form>
+      <p class="privacy-note">Accès réservé aux familles de la classe. Merci de ne pas diffuser le lien ni le mot de passe en dehors du groupe.</p>
+    </div>
+  </section>
+
+
+    <section id="welcomePanel" class="welcome-panel hidden">
+      <div class="welcome-card">
+        <h2>Bienvenue dans l'annuaire</h2>
+        <p>Vous pouvez ajouter cette application à l'écran d'accueil de votre téléphone pour la retrouver facilement.</p>
+        <div class="install-steps">
+          <div><strong>iPhone</strong><br>Ouvrir dans Safari → bouton Partager → Sur l'écran d'accueil.</div>
+          <div><strong>Android</strong><br>Menu du navigateur → Ajouter à l'écran d'accueil.</div>
+        </div>
+        <button id="welcomeOk" type="button">J'ai compris</button>
+      </div>
+    </section>
+
+
+  <div id="app" class="app hidden">
+    <header>
+      <div class="container">
+        <section class="hero">
+          <div>
+            <p class="eyebrow">Classe des Petits</p>
+            <h1>Annuaire des familles</h1>
+            <p class="subtitle">Jardin d'enfants Félix Terrier</p>
+            <p class="micro">Faciliter les rencontres, les trajets, les gardes et les activités.</p>
+          </div>
+          <button id="logoutButton" class="ghost-button" type="button">Verrouiller</button>
+        </section>
+
+        <section class="stats" aria-label="Synthèse">
+          <div><strong id="familyCount">0</strong><span>familles</span></div>
+          <div><strong id="referentCount">0</strong><span>référents</span></div>
+          <div><strong>3</strong><span>repères</span></div>
+        </section>
+
+        <section class="controls" aria-label="Recherche et filtres">
+          <div class="search-wrap">
+            <span aria-hidden="true">🔍</span>
+            <input id="search" class="search" type="search" placeholder="Rechercher un enfant ou un référent…">
+          </div>
+          <div id="filters" class="filters"></div>
+          <div class="my-zone">
+            <label for="myZone">Autour de chez moi</label>
+            <select id="myZone">
+              <option value="">Choisir un repère</option>
+              <option value="green">🟢 Porte de Bagnolet / Davout</option>
+              <option value="blue">🔵 Réunion / Charonne</option>
+              <option value="yellow">🟡 Saint-Fargeau / Pelleport / Gambetta</option>
+            </select>
+          </div>
+        </section>
+      </div>
+    </header>
+
+    <main class="container">
+      <p class="count" id="count"></p>
+      <div class="legend">
+        <span class="tag">🟢 Porte de Bagnolet / Davout</span>
+        <span class="tag">🔵 Réunion / Charonne</span>
+        <span class="tag">🟡 Saint-Fargeau / Pelleport / Gambetta</span>
+      </div>
+      <div id="cards" class="grid"></div>
+      <p id="empty" class="empty">Aucune famille ne correspond à cette recherche.</p>
+    </main>
+
+    <button id="topButton" class="top-button" type="button">↑</button>
+
+    <footer class="container">
+      <p>Cet annuaire reprend les informations transmises par les familles. Pour corriger, compléter ou retirer une information, contactez Nathalie.</p>
+      <p class="install-help">Pour l'ajouter à l'écran d'accueil : sur iPhone, bouton Partager → « Sur l'écran d'accueil » ; sur Android, menu du navigateur → « Ajouter à l'écran d'accueil ».</p>
+    </footer>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
