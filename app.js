@@ -17,7 +17,12 @@ function isUnlocked(){return localStorage.getItem("lpf-unlocked")==="1"}
 function unlock(){qs("#lock").classList.add("hidden");qs("#app").classList.remove("hidden");if(!localStorage.getItem("lpf-install-dismissed")) qs("#installPrompt").classList.remove("hidden")}
 function lock(){localStorage.removeItem("lpf-unlocked");location.reload()}
 function zoneDots(f){return ["green","blue","yellow"].filter(z=>f.zones[z]).map(z=>`<span class="dot ${z}"></span>`).join("")}
-function searchable(f){return normalize([f.child,f.location,...(f.contacts||[]).flatMap(c=>[c.name,c.phone])].join(" "))}
+function searchable(f){
+  const text = [f.child,f.location,...(f.contacts||[]).flatMap(c=>[c.name,c.phone])].join(" ");
+  const normalized = normalize(text);
+  const digits = text.replace(/\D/g,"");
+  return normalized + " " + digits;
+}
 
 function contactActions(c,family){
   const tel=(c.phone||"").replace(/[^0-9+]/g,"");
@@ -77,7 +82,12 @@ function render(){
   renderFilters();
   const list=state.families.filter(f=>{
     const okFilter=state.filter==="all" || f.zones[state.filter];
-    const okSearch=!state.query || searchable(f).includes(normalize(state.query));
+    const queryNorm = normalize(state.query);
+    const queryDigits = String(state.query||"").replace(/\D/g,"");
+    const haystack = searchable(f);
+    const okSearch = !state.query ||
+      haystack.includes(queryNorm) ||
+      (queryDigits && haystack.includes(queryDigits));
     return okFilter && okSearch;
   });
   qs("#resultCount").textContent=`${list.length} famille${list.length>1?"s":""}`;
